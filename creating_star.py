@@ -22,8 +22,28 @@ pygame.draw.line(DisplaySurf,blue,(60,60),(120,60),4)
 pygame.draw.line(DisplaySurf,blue,(120,60),(60,120))
 pygame.draw.line(DisplaySurf,blue,(60,120),(120,120),4)
 pygame.draw.circle(DisplaySurf,blue,(300,50),20,0)
-pygame.draw.ellipse(DisplaySurf,red,(200,250,40,80),0)
-pygame.draw.ellipse(DisplaySurf,white,(100,150,40,80),0)
+pygame.draw.ellipse(DisplaySurf,red,(300,250,40,80),1)
+pygame.draw.rect(DisplaySurf,red,(200,150,100,50))
+
+pixObj = pygame.PixelArray(DisplaySurf)
+pixObj[200][120] = black
+pixObj[201][120] = black
+pixObj[202][120] = black
+pixObj[203][120] = black
+pixObj[204][120] = black
+pixObj[305][120] = black
+pixObj[306][120] = black
+pixObj[487][120] = black
+pixObj[488][120] = black
+pixObj[489][120] = black
+pixObj[490][120] = black
+pixObj[491][120] = black
+pixObj[492][120] = black
+pixObj[493][120] = black
+pixObj[494][120] = black
+
+
+del pixObj
 while True:
     for event in pygame.event.get():
         if event.type == QUIT:
