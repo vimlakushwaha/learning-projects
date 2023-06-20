@@ -12,4 +12,4 @@ def _import_parsers(parserfiles):
     _parsers = [(k,v) for k, v in inspect.getmembers(_modules)if inspect.ismodule(v) and m.match(k)]
     _classes = dict()
     for k, v in _parsers:
-        _classes.update({K:v for k, vin inspect.getmembers(v) if inspect.ismodule(v) and m.match(k)})
+        _classes.update({K:v for k, in inspect.getmembers(v) if inspect.ismodule(v) and m.match(k)})

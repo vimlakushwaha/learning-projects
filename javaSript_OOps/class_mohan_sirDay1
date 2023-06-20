@@ -1,0 +1,13 @@
+class vehicle{
+    constructor(make,model){
+        this.make = make;
+        this.model = model;
+    }
+}
+class car extends vehicle{
+    constructor(make, model,regNo, fuelType){
+        super(make,model);
+        this.model = model;
+        
+    }
+}
